@@ -7,8 +7,8 @@ export default class AuthService {
     email: string,
     password: string
   ): Promise<AxiosResponse<AuthResponse>> {
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
     return $api.post<AuthResponse>('/login', { email, password });
   }
 
@@ -16,8 +16,8 @@ export default class AuthService {
     email: string,
     password: string
   ): Promise<AxiosResponse<AuthResponse>> {
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
     return $api.post<AuthResponse>('/registration', { email, password });
   }
 
